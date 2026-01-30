@@ -1,0 +1,596 @@
+Skip to content
+Abhishetty98198
+Automatic-car-parking-System
+Repository navigation
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Automatic-car-parking-System
+/
+Name your file...
+in
+main
+
+Edit
+
+Preview
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Automated Car Parking System</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body{
+    margin:0;
+    font-family:Segoe UI,Arial,sans-serif;
+    background:linear-gradient(to right,#eef2f3,#f9fbfd);
+}
+header{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+    padding:90px 20px;
+    text-align:center;
+}
+header h1{font-size:3rem;}
+header p{font-size:1.2rem;max-width:900px;margin:auto;}
+nav{
+    background:#000;
+    padding:12px;
+    text-align:center;
+}
+nav a{
+    color:#fff;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:600;
+}
+nav a:hover{color:#00c6ff;}
+section{
+    padding:70px 20px;
+    max-width:1100px;
+    margin:auto;
+    text-align:center;
+}
+footer{
+    background:#0f2027;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Automated Car Parking System</h1>
+    <p>ESP32-Based Embedded System with GPS, Camera, Voice & Gesture Control and Dynamic Slot Management</p>
+</header>
+
+<nav>
+    <a href="about.html">About</a>
+    <a href="features.html">Features</a>
+    <a href="architecture.html">Architecture</a>
+    <a href="team.html">Team</a>
+</nav>
+
+<section>
+    <h2>Welcome</h2>
+    <p>
+        This project demonstrates a smart and automated parking solution using
+        embedded systems and IoT technologies to reduce congestion and enhance
+        parking efficiency.
+    </p>
+</section>
+
+<footer>
+    © 2026 Automated Car Parking System | Final Year Project
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Project</title>
+<style>
+body{margin:0;font-family:Segoe UI;background:#f4f6f8;}
+nav{background:#000;padding:12px;text-align:center;}
+nav a{color:#fff;margin:0 15px;text-decoration:none;}
+section{max-width:1000px;margin:auto;padding:60px 20px;}
+h2{text-align:center;color:#203a43;}
+footer{background:#0f2027;color:#fff;text-align:center;padding:15px;}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="architecture.html">Architecture</a>
+    <a href="team.html">Team</a>
+</nav>
+
+<section>
+    <h2>About the Project</h2>
+    <p>
+        The Automated Car Parking System is designed to overcome parking space
+        management issues in urban environments. Using an ESP32 microcontroller,
+        the system intelligently monitors parking slots, guides vehicles, and
+        improves security through automation.
+    </p>
+    <p>
+        The project integrates sensors, GPS modules, camera systems, and advanced
+        user interaction methods like voice and gesture control to provide a
+        smart parking experience.
+    </p>
+</section>
+
+<footer>© 2026 Automated Car Parking System</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Features</title>
+<style>
+body{margin:0;font-family:Segoe UI;background:#eef2f3;}
+nav{background:#000;padding:12px;text-align:center;}
+nav a{color:#fff;margin:0 15px;text-decoration:none;}
+section{max-width:1100px;margin:auto;padding:60px 20px;}
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+.card{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+h2{text-align:center;color:#203a43;}
+footer{background:#0f2027;color:#fff;text-align:center;padding:15px;}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="architecture.html">Architecture</a>
+    <a href="team.html">Team</a>
+</nav>
+
+<section>
+    <h2>Key Features</h2>
+    <div class="features">
+        <div class="card">
+            <h3>Dynamic Slot Management</h3>
+            <p>Automatically detects free and occupied slots in real time.</p>
+        </div>
+        <div class="card">
+            <h3>Obstacle Detection</h3>
+            <p>Ensures safe vehicle movement using ultrasonic sensors.</p>
+        </div>
+        <div class="card">
+            <h3>GPS Navigation</h3>
+            <p>Guides drivers to the nearest available parking location.</p>
+        </div>
+        <div class="card">
+            <h3>Camera Surveillance</h3>
+            <p>Enhances security and enables number plate recognition.</p>
+        </div>
+        <div class="card">
+            <h3>Voice & Gesture Control</h3>
+            <p>Hands-free interaction for better accessibility.</p>
+        </div>
+    </div>
+</section>
+
+<footer>© 2026 Automated Car Parking System</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>System Architecture</title>
+<style>
+body{margin:0;font-family:Segoe UI;background:#f9fbfd;}
+nav{background:#000;padding:12px;text-align:center;}
+nav a{color:#fff;margin:0 15px;text-decoration:none;}
+section{max-width:1000px;margin:auto;padding:60px 20px;}
+h2{text-align:center;color:#203a43;}
+.box{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+footer{background:#0f2027;color:#fff;text-align:center;padding:15px;}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="features.html">Features</a>
+    <a href="team.html">Team</a>
+</nav>
+
+<section>
+    <h2>System Architecture</h2>
+    <div class="box">
+        <p>
+            The ESP32 microcontroller acts as the core processing unit.
+            It interfaces with ultrasonic sensors, IR sensors, GPS module,
+            camera module, and communication systems.
+        </p>
+        <p>
+            Sensor data is processed locally and transmitted via Wi-Fi
+            to a monitoring dashboard, enabling real-time slot tracking
+            and user interaction.
+        </p>
+    </div>
+</section>
+
+<footer>© 2026 Automated Car Parking System</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Team</title>
+<style>
+body{margin:0;font-family:Segoe UI;background:#eef2f3;}
+nav{background:#000;padding:12px;text-align:center;}
+nav a{color:#fff;margin:0 15px;text-decoration:none;}
+section{max-width:900px;margin:auto;padding:60px 20px;text-align:center;}
+.card{
+    background:#fff;
+    padding:25px;
+    margin:20px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+footer{background:#0f2027;color:#fff;text-align:center;padding:15px;}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="features.html">Features</a>
+    <a href="architecture.html">Architecture</a>
+</nav>
+
+<section>
+    <h2>Project Team</h2>
+
+    <div class="card">
+        <h3>Student Name</h3>
+        <p>Branch: EXTC / E&TC<br>College: Your College Name</p>
+    </div>
+
+    <div class="card">
+        <h3>Project Guide</h3>
+        <p>Guide Name<br>Department</p>
+    </div>
+</section>
+
+<footer>© 2026 Automated Car Parking System</footer>
+
+</body>
+</html>
